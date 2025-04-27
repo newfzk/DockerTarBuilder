@@ -1,4 +1,4 @@
-name: x86-64 Pull and Save Docker Image
+name: x86-64 ubuntu-18.04-with-fontconfig
 on:
   workflow_dispatch:
     inputs:
