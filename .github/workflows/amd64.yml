@@ -27,7 +27,7 @@ jobs:
         for image in "${image_array[@]}"; do
           docker pull "${image}" --platform "linux/amd64"
           docker build -t harbor.registry.com/library/ubuntu:18.04-with-fontconfig .
-          docker save "harbor.registry.com/library/ubuntu:18.04-with-fontconfig" -o "harbor.registry.com/library/ubuntu:18.04-with-fontconfig-amd64.tar"
+          docker save "harbor.registry.com/library/ubuntu:18.04-with-fontconfig" -o "ubuntu-18.04-with-fontconfig-amd64.tar"
         done
 
     - name: Compress the TAR files
